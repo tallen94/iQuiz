@@ -8,19 +8,32 @@
 
 import UIKit
 
-class CategoriesTableViewController: UITableViewController {
+class CategoriesTableViewController: UITableViewController, UIPopoverPresentationControllerDelegate {
     
     @IBAction func settings(sender: UIBarButtonItem) {
-        let alertController = UIAlertController(title: "Settings", message: "Settings go here", preferredStyle: .Alert)
-        alertController.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
-        self.presentViewController(alertController, animated: true, completion: nil)
+        let settingsVC : SettingsViewController = storyboard?.instantiateViewControllerWithIdentifier("Settings") as! SettingsViewController
+        settingsVC.modalPresentationStyle = .Popover
+        settingsVC.preferredContentSize = CGSizeMake(400, 130)
+        
+        let popoverPresentationViewController = settingsVC.popoverPresentationController
+        popoverPresentationViewController?.permittedArrowDirections = .Any
+        popoverPresentationViewController?.delegate = self
+        popoverPresentationViewController?.barButtonItem = sender
+        presentViewController(settingsVC, animated: true, completion: nil)
     }
-    private let categories : [String] = ["Mathematics", "Science", "Marvel Super Heroes"]
+    
+    
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle{
+        return .None
+    }
+    
     private let icons : [String] = ["math.jpg", "science.png", "marvel.jpeg"]
-    private let descriptions : [String] = ["Questions about math, from basic addition to complex riddles", "Your favorite science questions. About basic science.", "I dont think you will get any of these right."]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        QuizManager.Instance.DownloadData() {
+           self.tableView.reloadData()
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -43,7 +56,8 @@ class CategoriesTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return categories.count
+        
+        return QuizManager.Instance.quizzes.count
     }
 
     
@@ -51,12 +65,21 @@ class CategoriesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("categoryCell", forIndexPath: indexPath) as! CategoryTableViewCell
 
         cell.icon.image = UIImage(named: icons[indexPath.row])
-        cell.title.text = categories[indexPath.row]
-        cell.desc.text = descriptions[indexPath.row]
-
+        let quiz = QuizManager.Instance.quizzes[indexPath.row] as! Quiz
+        cell.title.text = quiz.title
+        cell.desc.text = quiz.description
+        cell.icon.image = UIImage(named: icons[indexPath.row])
         return cell
     }
     
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
+        
+    }
+    
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        QuizManager.Instance.startQuiz(indexPath.row)
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -93,14 +116,9 @@ class CategoriesTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
-
 }
