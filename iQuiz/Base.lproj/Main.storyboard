@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DFU-Tl-Pcv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DFU-Tl-Pcv">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -15,13 +15,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="93" id="j0C-ka-mnc" customClass="CategoryTableViewCell" customModule="iQuiz" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="110"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="93"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j0C-ka-mnc" id="L4w-Ox-qak">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="109"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="92"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mathematics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHd-2F-vJA">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Mathematics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHd-2F-vJA">
                                             <rect key="frame" x="116" y="44" width="99" height="21"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,7 +33,7 @@
                                             <color key="textColor" red="0.55634469696969702" green="0.55634469696969702" blue="0.55634469696969702" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="math.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0na-pT-Cls">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="math.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0na-pT-Cls">
                                             <rect key="frame" x="8" y="35" width="73" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="70" id="b7d-5g-Cps"/>
@@ -74,8 +74,6 @@
                                             <exclude reference="9O1-bW-a36"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="MvW-cw-8sa"/>
-                                            <exclude reference="eZu-go-j8A"/>
                                             <exclude reference="4bK-JI-jZ4"/>
                                             <exclude reference="B78-yv-H3u"/>
                                             <exclude reference="DYp-V2-dJo"/>
@@ -85,6 +83,8 @@
                                             <exclude reference="S7H-aQ-uS0"/>
                                             <exclude reference="VOT-UX-4gb"/>
                                             <exclude reference="Z4N-aD-OQg"/>
+                                            <exclude reference="MvW-cw-8sa"/>
+                                            <exclude reference="eZu-go-j8A"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -92,8 +92,6 @@
                                             <include reference="9O1-bW-a36"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="MvW-cw-8sa"/>
-                                            <include reference="eZu-go-j8A"/>
                                             <include reference="4bK-JI-jZ4"/>
                                             <include reference="B78-yv-H3u"/>
                                             <exclude reference="DYp-V2-dJo"/>
@@ -103,6 +101,8 @@
                                             <exclude reference="S7H-aQ-uS0"/>
                                             <exclude reference="VOT-UX-4gb"/>
                                             <include reference="Z4N-aD-OQg"/>
+                                            <include reference="MvW-cw-8sa"/>
+                                            <include reference="eZu-go-j8A"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
