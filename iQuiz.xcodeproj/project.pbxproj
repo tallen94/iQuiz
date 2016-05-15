@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6907BC9D1CE46A390099ED7F /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6907BC9C1CE46A390099ED7F /* RadioButton.swift */; };
 		6914938D1CDAC48800D4CD0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6914938C1CDAC48800D4CD0E /* AppDelegate.swift */; };
 		691493921CDAC48800D4CD0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 691493901CDAC48800D4CD0E /* Main.storyboard */; };
 		691493941CDAC48800D4CD0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 691493931CDAC48800D4CD0E /* Assets.xcassets */; };
@@ -18,6 +19,13 @@
 		691493BF1CDAC78100D4CD0E /* math.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 691493BE1CDAC78100D4CD0E /* math.jpg */; };
 		691493C11CDAC94900D4CD0E /* marvel.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 691493C01CDAC94900D4CD0E /* marvel.jpeg */; };
 		691493C31CDAC97300D4CD0E /* science.png in Resources */ = {isa = PBXBuildFile; fileRef = 691493C21CDAC97300D4CD0E /* science.png */; };
+		69376A531CDFF63F0089DAD5 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69376A521CDFF63F0089DAD5 /* QuizManager.swift */; };
+		69690D3B1CE4515900A23E9A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69690D3A1CE4515900A23E9A /* QuizViewController.swift */; };
+		69690D3D1CE451E800A23E9A /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69690D3C1CE451E800A23E9A /* QuestionViewController.swift */; };
+		69690D3F1CE451F600A23E9A /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69690D3E1CE451F600A23E9A /* AnswerViewController.swift */; };
+		69B68F421CE92C2C00F0638F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B68F411CE92C2C00F0638F /* SettingsViewController.swift */; };
+		69DE58021CE7E43000A4EAA9 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE58011CE7E43000A4EAA9 /* Quiz.swift */; };
+		69DE58041CE7E99C00A4EAA9 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DE58031CE7E99C00A4EAA9 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6907BC9C1CE46A390099ED7F /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		691493891CDAC48800D4CD0E /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6914938C1CDAC48800D4CD0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		691493911CDAC48800D4CD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +64,13 @@
 		691493BE1CDAC78100D4CD0E /* math.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = math.jpg; sourceTree = "<group>"; };
 		691493C01CDAC94900D4CD0E /* marvel.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marvel.jpeg; sourceTree = "<group>"; };
 		691493C21CDAC97300D4CD0E /* science.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = science.png; sourceTree = "<group>"; };
+		69376A521CDFF63F0089DAD5 /* QuizManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
+		69690D3A1CE4515900A23E9A /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		69690D3C1CE451E800A23E9A /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		69690D3E1CE451F600A23E9A /* AnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		69B68F411CE92C2C00F0638F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		69DE58011CE7E43000A4EAA9 /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		69DE58031CE7E99C00A4EAA9 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +98,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6907BC971CE4639E0099ED7F /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				6907BC9C1CE46A390099ED7F /* RadioButton.swift */,
+				69DE58011CE7E43000A4EAA9 /* Quiz.swift */,
+				69DE58031CE7E99C00A4EAA9 /* Question.swift */,
+			);
+			name = Reusable;
+			sourceTree = "<group>";
+		};
 		691493801CDAC48700D4CD0E = {
 			isa = PBXGroup;
 			children = (
@@ -105,9 +131,11 @@
 		6914938B1CDAC48800D4CD0E /* iQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				6907BC971CE4639E0099ED7F /* Reusable */,
 				6914938C1CDAC48800D4CD0E /* AppDelegate.swift */,
 				691493BA1CDAC55200D4CD0E /* CategoriesTableViewController.swift */,
 				691493BC1CDAC6FB00D4CD0E /* CategoryTableViewCell.swift */,
+				69376A521CDFF63F0089DAD5 /* QuizManager.swift */,
 				691493BE1CDAC78100D4CD0E /* math.jpg */,
 				691493C21CDAC97300D4CD0E /* science.png */,
 				691493C01CDAC94900D4CD0E /* marvel.jpeg */,
@@ -115,6 +143,10 @@
 				691493931CDAC48800D4CD0E /* Assets.xcassets */,
 				691493951CDAC48800D4CD0E /* LaunchScreen.storyboard */,
 				691493981CDAC48800D4CD0E /* Info.plist */,
+				69690D3A1CE4515900A23E9A /* QuizViewController.swift */,
+				69690D3C1CE451E800A23E9A /* QuestionViewController.swift */,
+				69690D3E1CE451F600A23E9A /* AnswerViewController.swift */,
+				69B68F411CE92C2C00F0638F /* SettingsViewController.swift */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -271,9 +303,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69376A531CDFF63F0089DAD5 /* QuizManager.swift in Sources */,
+				69690D3F1CE451F600A23E9A /* AnswerViewController.swift in Sources */,
+				69B68F421CE92C2C00F0638F /* SettingsViewController.swift in Sources */,
+				69690D3B1CE4515900A23E9A /* QuizViewController.swift in Sources */,
+				69690D3D1CE451E800A23E9A /* QuestionViewController.swift in Sources */,
 				6914938D1CDAC48800D4CD0E /* AppDelegate.swift in Sources */,
+				69DE58041CE7E99C00A4EAA9 /* Question.swift in Sources */,
 				691493BB1CDAC55200D4CD0E /* CategoriesTableViewController.swift in Sources */,
 				691493BD1CDAC6FB00D4CD0E /* CategoryTableViewCell.swift in Sources */,
+				6907BC9D1CE46A390099ED7F /* RadioButton.swift in Sources */,
+				69DE58021CE7E43000A4EAA9 /* Quiz.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +538,7 @@
 				691493B31CDAC48800D4CD0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		691493B41CDAC48800D4CD0E /* Build configuration list for PBXNativeTarget "iQuizTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +547,7 @@
 				691493B61CDAC48800D4CD0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		691493B71CDAC48800D4CD0E /* Build configuration list for PBXNativeTarget "iQuizUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +556,7 @@
 				691493B91CDAC48800D4CD0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

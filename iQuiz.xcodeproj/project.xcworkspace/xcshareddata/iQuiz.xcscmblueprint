@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DDC7E0294BBC6DA5DF0F7CBD574548EE08F1395B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DDC7E0294BBC6DA5DF0F7CBD574548EE08F1395B" : 0,
+    "86A7372CBBA602B86158E03B1503899C0A2B3ABF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B96E9160-66A1-4174-86AC-B9F9FEB5BCF3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DDC7E0294BBC6DA5DF0F7CBD574548EE08F1395B" : "iQuiz\/",
+    "86A7372CBBA602B86158E03B1503899C0A2B3ABF" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "iQuiz",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iQuiz.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tallen94\/iOSCalculator.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "86A7372CBBA602B86158E03B1503899C0A2B3ABF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tallen94\/iQuiz.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DDC7E0294BBC6DA5DF0F7CBD574548EE08F1395B"
+    }
+  ]
+}
